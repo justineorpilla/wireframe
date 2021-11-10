@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Share</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script>
+    authentication();
+    setSharing();
+  </script>
+</head>
+
+<body>
+  <header>
+    <script> navbar("manageDocumentsNav");</script>
+  </header>
+  <!--
+--------------------------------------------------------------------------------------------------------------
+        TABLE#1 - UPLOAD SHARING - SHARED USER (READ)
+----------------------------------------------------------------------------------------------------------------->
+  <div class="header-wrapper">
+    <h1>
+      Upload Sharing : <span style="font-weight: normal">
+        <script>document.write(filename);</script>
+      </span>
+    </h1>
+  </div>
+  <div class="users-table-wrapper">
+    <table class="users-table">
+      <thead>
+        <tr>
+          <th width="50%">Shared User</th>
+          <th style="text-align: center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>fillSharing();</script>
+        <tr>
+          <td>&nbsp</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--
+--------------------------------------------------------------------------------------------------------------
+       TABLE #2 - ADD SHARING (CREATE) 
+----------------------------------------------------------------------------------------------------------------->
+  <div class="header-wrapper">
+    <h1>Add Sharing</h1>
+  </div>
+  <div style="border: 2px solid black; border-radius: 4px; padding: 30px">
+    <table width="100%">
+      <tr>
+        <td width="10%" align="right">
+          <span class="choose-user-text">Choose User:</span>
+        </td>
+        <td width="40%" align="right">
+          <select class="select-option-share" id="selectOption">
+            <!-- <script>selectOptionDropdown();</script> -->
+            <script>fillDropdown();</script>
+
+          </select>
+        </td>
+        <td width="50%" style="text-align: left">
+          <button class="select-option-btn" onclick="userAssign()">Add Share</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--
+--------------------------------------------------------------------------------------------------------------
+       DELETE MODAL BOOTSTRAP
+----------------------------------------------------------------------------------------------------------------->
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModallLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title align-self-xl-center" id="deleteModallLabel">Confirm from Web Page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="delete-contents">
+            <img src="./images/question-mark.png" alt="">
+            Are you sure? <br>
+          </div>
+        </div>
+        <div class="modal-footer align-self-xl-center">
+          <button type="button" class="btn btn-outline-primary" onclick="deleteShare()">Ok</button>
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

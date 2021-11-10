@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Communications Application</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>authentication();</script>
+</head>
+
+<body>
+    <header>
+        <script>navbar("manageUsersNav");</script>
+    </header>
+    <div class="container">
+        <h1>Edit User Information</h1>
+    </div>
+    <div class="table-wrapper">
+        <form action="./usermgt.html">
+            <table width="100%">
+                <tr>
+                    <td class="row-header">Full Name</td>
+                    <td class="row-input">
+                        <input type="text" id="name" class="row-text" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-header">Email</td>
+                    <td class="row-input">
+                        <input type="text" id="email" class="row-text" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" onclick="saveEdit()" class="skyblue-btn" value="Save"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script>editUser();</script>
+
+</html>

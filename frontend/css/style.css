@@ -1,0 +1,387 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* INDEX.HTML */
+
+.existing-user {
+  margin-top: 50px;
+}
+.existing-user button {
+  margin-top: 30px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.new-user {
+  margin-top: 50px;
+}
+
+.new-user button {
+  margin-top: 30px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout-text h2{
+  margin-top: 100px;
+}
+
+/* REGISTER CSS */
+
+.table-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.row-header {
+  text-align: end;
+  padding: 30px 60px;
+  font-weight: bold;
+  width: 43%;
+}
+
+.row-input {
+  text-align: left;
+}
+
+.row-text {
+  height: 30px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+/* REGISTER SUCCESS */
+.regsuccess-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* LOGIN PAGE */
+
+.skyblue-btn {
+  margin: 20px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  background-color: #66ffff;
+  font-weight: bolder;
+  border: 2px solid black;
+  font-size: 16px;
+  width: 180px;
+  cursor: pointer !important;
+}
+
+.gray-btn {
+  border-radius: 10px;
+  background-color: #bfbfbf;
+  font-weight: bolder;
+  border: 2px solid black;
+  font-size: 16px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.gray-btn:hover {
+  background-color:#888888;
+}
+
+.gray-edit-btn-cancel {
+  border-radius: 10px;
+  background-color: #bfbfbf;
+  font-weight: bolder;
+  border: 2px solid black;
+  font-size: 16px;
+  width: 120px;
+  cursor: pointer;
+}
+
+/* MODAL BUTTON */
+.btn {  
+  width: 100px;
+}
+
+/* LOGIN-SUCCESS.HTML AND NAVBAR */
+
+.header {
+  background-color: #bfbfbf;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+.nav-table {
+  border-color: black;
+  border-collapse: collapse;
+}
+
+.nav-buttons button { 
+  background-color: #bfbfbf;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px 0px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* GROUP CHAT*/
+
+.group-chat {
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px;
+  max-width: 100%;
+  position: relative;
+}
+
+.span-x {
+  position: absolute;
+  right: 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: -8px 3px;
+  font-size: 22px;
+}
+
+.group-text {
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: -2px;
+  padding: 20px 10px 150px;
+}
+
+.group-text p {
+  line-height: 0.8;
+}
+
+.group-chat-compose {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: -2px;
+  padding: 10px 30px 5px;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  font-weight: bolder;
+}
+
+.form-inline input[type="text"] {
+  vertical-align: middle;
+  width: 75%;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: normal;
+  cursor: auto;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 8px 6px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* USER MANAGEMENT TABLE */
+
+.header-wrapper h1 {
+  margin: 20px 15px;
+  font-weight: bold;
+}
+
+.users-table-wrapper {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.users-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.users-table th {
+  border-right: 1px solid black;
+  padding: 8px 3px;
+  font-weight: normal;
+  background-color: #bfbfbf;
+}
+
+.users-table td {
+  border-right: 1px solid black;
+  padding: 8px 3px;
+}
+
+.users-table tr:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.users-table a:link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.users-table a:visited {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* MANAGE DOCUMENTS BUTTON */
+
+.add-upload-btn {
+  margin-top: -40px;
+  margin-left: 8px;
+  padding: 2px 30px;
+  border-radius: 10px;
+  background-color: #66ffff;
+  font-weight: bolder;
+  border: 2px solid black;
+  position: absolute;
+}
+
+.add-upload-btn:hover {
+  background-color: #3f9999;
+}
+
+.choose-user-text {
+  font-weight: bolder;
+}
+
+.select-option-share {
+  width: 640px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.select-option-btn {
+  background-color: #bfbfbf;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 170px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.select-option-btn:hover {
+  background-color: gray;
+}
+
+.modal-content {
+  border: 2px solid black;
+}
+.modal-header {
+  border-bottom: 2px solid black;
+}
+
+/* DELETE MODAL CONTENTS*/ 
+
+.delete-span {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 3px 4px;
+}
+
+.delete-contents {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.delete-contents img {
+  margin-left: -50px;
+  width: 25%;
+}
+
+.delete-btn-ok {
+  border: 2px solid blue;
+  border-radius: 8px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.delete-btn-cancel {
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.upload-modal-body {
+  font-weight: bold;
+}
+
+.upload-modal-textfield {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.upload-modal-file {
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+  /* background-color: yellow; */
+  width: 280px;
+}
+
+.edit-modal-textfield {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.hover-pointer {
+  cursor: pointer !important;
+}
+
+.btn-plain {
+  border: none;
+  background-color: transparent;
+  cursor: pointer !important;
+}
+
+.btn-plain-gc {
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.btn-plain-gc:hover {
+  background-color: gray;
+}
+
+
+
+

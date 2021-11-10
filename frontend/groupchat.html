@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Group Chat</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>authentication();</script>
+</head>
+
+<body>
+    <header>
+        <script> navbar("groupChatNav");</script>
+    </header>
+
+    <div class="group-chat">
+        <span>Group Chat</span>
+        <span class="span-x">X</span>
+    </div>
+    <div class="group-text">
+        <script> fillChat();</script>
+    </div>
+    <div class="group-chat-compose">
+        <form class="form-inline">
+            <label for="sender">
+                <script> document.write(session_name);</script>
+            </label>
+            <input type="text" placeholder="I am good" id="inputChat" size=100 />
+            <button class="btn-plain-gc" onclick="addMessage()">Send</button>
+            <button class="btn-plain-gc">Refresh</button>
+        </form>
+    </div>
+</body>
+
+</html>

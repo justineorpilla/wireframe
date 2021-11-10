@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="table-wrapper">
+        <form method="POST" onsubmit="return validateRegistration(event)">
+            <table border="0" width="100%">
+                <tr>
+                    <td colspan="2">
+                        <h1>Register</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-header">Full Name</td>
+                    <td class="row-input"><input type="text" class="row-text" size="30" placeholder="Ann Hunter"
+                            id="fullname"></td>
+                </tr>
+                <tr>
+                    <td class="row-header">Email</td>
+                    <td class="row-input"><input type="text" class="row-text" size="30"
+                            placeholder="ann.hunter@mail.com" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-header">Password</td>
+                    <td class="row-input"><input type="password" class="row-text" size="30" placeholder="*******"
+                            id="password"></td>
+                </tr>
+                <tr>
+                    <td class="row-header">Confirm Password</td>
+                    <td class="row-input"><input type="password" class="row-text" size="30" placeholder="*******"
+                            id="confirmPassword"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="btnRegister" class="skyblue-btn" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
